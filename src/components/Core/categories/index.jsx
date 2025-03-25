@@ -10,8 +10,6 @@ const CategoriesMain = async () => {
   );
   const data = await res.data.data;
 
-//   console.log(data);
-  
   return (
     <div>
       <Categories data={data} />
