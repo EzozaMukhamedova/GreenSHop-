@@ -1,0 +1,26 @@
+[
+  {
+    "id": "123",
+    "name": "123",
+    "image": "/images/123.png",
+    "price": "$12",
+    "oldPrice": "$12",
+    "discount": "13%"
+  },
+  {
+    "id": "peace-lil",
+    "name": "Peace Lil",
+    "image": "/images/peace-lil.png",
+    "price": "$20",
+    "oldPrice": "$20.99",
+    "discount": "13%"
+  },
+  {
+    "id": "monstera-deliciosa",
+    "name": "Monstera Deliciosa",
+    "image": "/images/monstera.png",
+    "price": "$15",
+    "oldPrice": "$35.99",
+    "discount": "13%"
+  }
+]
