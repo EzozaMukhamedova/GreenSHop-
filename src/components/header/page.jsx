@@ -66,6 +66,7 @@ export default function Navbar() {
               //   tabindex="-1"
               className="anticon anticon-shopping-cart cursor-pointer text-[25px]"
             >
+              {/* <Image src="/cardIcon.png" alt="alt" width={20} height={20} /> */}
               <svg
                 viewBox="0 0 1024 1024"
                 focusable="false"
