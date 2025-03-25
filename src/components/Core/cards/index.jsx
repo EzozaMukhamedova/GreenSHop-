@@ -14,8 +14,8 @@ const Cards2 = async () => {
 
   return (
     <div className=" grid grid-cols-3 gap-2">
-      {data.map((info) => {
-        return <Card info={info} />;
+      {data.map((info, index) => {
+        return <Card key={index} info={info} />;
       })}
     </div>
   );

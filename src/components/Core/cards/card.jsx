@@ -22,6 +22,7 @@
 // export default Card;
 
 import React from "react";
+import Image from "next/image";
 
 const Card = ({ info }) => {
   const { title, price, main_image, discount_price } = info;
@@ -29,18 +30,52 @@ const Card = ({ info }) => {
   return (
     <div className="">
       <div className="border border-gray-200">
-        <div className="max-w-sm rounded border border-gray-200 overflow-hidden py-[30px] px-[20px] m-4 bg-[#f5f5f5] relative   ">
+        <div className="group max-w-sm rounded border border-gray-200 overflow-hidden py-[30px] px-[20px] m-4 bg-[#f5f5f5] relative">
           <img
             className="w-full h-48 object-contain"
             src={main_image}
             alt={`Image of ${title}`}
           />
+
           {discount_price && (
-            <span className="absolute top-[10px] left-0 bg-green-600 text-white py-1 px-2 text-xs font-bold ">
-              13% OFF
+            <span className="absolute top-[10px] left-0 bg-green-600 text-white py-1 px-2 text-xs font-bold">
+              {discount_price}% OFF
             </span>
           )}
+
+          {/* Hoverda ko'rinadigan ikonlar */}
+          <div className="hidden absolute inset-x-0 bottom-4 gap-4 justify-center group-hover:flex">
+            <button className="bg-white w-8 h-8 p-[6px] flex items-center justify-center rounded-full shadow-md cursor-pointer text-gray-700 hover:text-green-600">
+              <Image
+                src="/heartIcon.png"
+                alt="Card icon"
+                width={50}
+                height={50}
+                layout="responsive"
+              />
+            </button>
+            <button className="bg-white w-8 h-8 p-[5px] flex items-center justify-center rounded-full shadow-md cursor-pointer text-gray-700 hover:text-green-600">
+              <Image
+                src="/cardIcon.png"
+                alt="Card icon"
+                width={50}
+                height={50}
+                layout="responsive"
+              />
+            </button>
+            <button className="bg-white w-8 p-[7px] h-8 flex items-center justify-center rounded-full shadow-md cursor-pointer text-gray-700 hover:text-green-600 ">
+                
+              <Image
+                src="/searchIcon.png"
+                alt="Card icon"
+                width={50}
+                height={50}
+                layout="responsive"
+              />
+            </button>
+          </div>
         </div>
+
         <div className="px-6 py-4 ">
           <div className=" text-[18px] ">{title}</div>
           <div className="font-semibold text-lg">
