@@ -1,12 +1,9 @@
 import Main2 from "@/components/Core";
 import Footer from "@/components/footer/page";
 import Navbar from "@/components/header/page";
-import Login from "@/components/SignUp/login";
-import Register from "@/components/SignUp/register";
-
 import GreenShopBanner from "@/components/swiper/page";
 import TopFooter from "@/components/topFooter/page";
-import FetchData from "@/components/ui/FetchData";
+// import FetchData from "@/components/ui/FetchData";
 
 export default function Home({ posts }) {
   return (

@@ -106,8 +106,6 @@ export default function Navbar() {
             <SignUp />
           </button> */}
           <SignUp />
-
-    
         </div>
       </div>
       <hr className="text-[#46A358] w-[1165px] m-auto border my-[10px]" />
