@@ -13,8 +13,6 @@ export default function Home({ posts }) {
       <Main2 />
       <TopFooter />
       <Footer />
-
-
     </div>
   );
 }
