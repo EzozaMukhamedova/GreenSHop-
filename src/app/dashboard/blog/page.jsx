@@ -1,12 +1,14 @@
 import Footer from "@/components/footer/page";
 import Navbar from "@/components/header/page";
 import TopFooter from "@/components/topFooter/page";
+import FetchData from "@/components/ui/FetchData";
 
 export default function Blog() {
   return (
     <>
       <div className="w-[1165px] h-[80px] m-auto">
-        <Navbar />
+      <FetchData />
+        {/* <Navbar />
         <main className="text-center items-center mx-auto h-[500px] justify-center mt-[100px]">
           <h2 className="text-[54px] font-bold">
             Monetize your content <br /> with{" "}
@@ -19,7 +21,7 @@ export default function Blog() {
           </span>
         </main>
         <TopFooter />
-        <Footer />
+        <Footer /> */}
       </div>
     </>
   );
